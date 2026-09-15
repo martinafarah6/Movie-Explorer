@@ -1,11 +1,11 @@
 import {Header,Home,Login,Movie,Favorites,Search,Contact,Footer} from './components';
 import { useState } from 'react';
-import { BrowserRouter,Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from 'react-router-dom';
 function App()
 {
     const [arr,setArr]=useState([]);
     return(
-        <BrowserRouter>
+        <HashRouter>
             <Header/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
@@ -16,7 +16,7 @@ function App()
                 <Route path="/contact" element={<Contact/>}/>
             </Routes>
             <Footer/>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 export default App;

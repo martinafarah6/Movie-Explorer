@@ -1,0 +1,38 @@
+footer{
+    text-align: center;
+    background-color: rgb(28, 28, 28);
+    padding :10px;
+    margin-bottom: 0px;
+    margin-top: auto;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer img{
+    border-radius: 50px;
+    border:solid yellow;
+    box-shadow: 1px 1px 10px yellow;
+    transition: all 0.3s ease;
+}
+footer img:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 15px yellow;
+    cursor: pointer;
+}
+footer p{
+    color:white;
+    font-size: 12px;
+}
+.tmdb {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tmdb img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+

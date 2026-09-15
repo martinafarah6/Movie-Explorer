@@ -132,7 +132,7 @@ export default function Login()
                 <input type="submit" className='butt'/>
             </form>
 
-            {pass&&<h2>Registration successful!<img src="https://i.pinimg.com/1200x/1c/a2/2b/1ca22bf3ae6dde88ab0416b0027d4890.jpg" alt="happy" width="40px"/></h2>}
+            {pass&&<h2 className='warnning'>Registration Successful!🎉</h2>}
         </section>
     )
 }

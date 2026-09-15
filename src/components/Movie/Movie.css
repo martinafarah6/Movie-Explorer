@@ -84,4 +84,11 @@
     transform: translateY(-5px); 
     cursor: pointer;
 }
+@media (max-width: 600px) {
+    .movieContent {
+        display: block;
+        width: 200px;
+        margin: 10px auto;
+    }
+}
 

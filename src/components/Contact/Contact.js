@@ -29,7 +29,7 @@ function Contact()
         else if(form.message==="")
         {
             setSend(false);
-            alert("Please Enter your problem détails...");
+            alert("Please Enter your problem details...");
         }
         else
           {
@@ -64,7 +64,7 @@ function Contact()
                 </div>
                 <input type="submit" value="Send"/>
             </form>
-            {send && <p className='warnning'>Problem was sent successfully!🎉 </p>}
+            {send && <h3 className='warnning'>Problem was sent successfully!🎉 </h3>}
         </section>
     )
 }

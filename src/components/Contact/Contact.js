@@ -8,17 +8,33 @@ function Contact()
         subject:"",
         message:""
     })
-
+    const [send,setSend]=useState(false);
     const handlesubmit=(e)=>{
         e.preventDefault();
         if(form.name==="")
         {
+            setSend(false);
             alert("Please Enter your name....");
         }
         else if(form.email==="")
         {
+            setSend(false);
             alert("Please Enter your Email...");
         }
+        else if(form.subject==="")
+        {
+            setSend(false);
+	        alert("Please Enter your problem subject...");
+        }
+        else if(form.message==="")
+        {
+            setSend(false);
+            alert("Please Enter your problem détails...");
+        }
+        else
+          {
+	          setSend(true);
+          }  
     }
     return(
         <section id="contact">
@@ -48,6 +64,7 @@ function Contact()
                 </div>
                 <input type="submit" value="Send"/>
             </form>
+            {send && <p className='warnning'>Problem was sent successfully!🎉 </p>}
         </section>
     )
 }

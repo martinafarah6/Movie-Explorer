@@ -29,6 +29,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          REACT_APP_TMDB_TOKEN: ${{ secrets.REACT_APP_TMDB_TOKEN }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

@@ -68,8 +68,8 @@ export default function Movie({fav,setFav})
             </ul>
             {
                 loading ?
-                <p>Loading Movies...</p>:
-                error?(<p>{error}</p>):
+                <p className='warnning'>Loading Movies...</p>:
+                error?(<p className='warnning'>{error}</p>):
                 (apiMovies.map(movie=>(
                     (selectedGenre === "All" || getGenreNames(movie.genre_ids).includes(selectedGenre))
                     &&

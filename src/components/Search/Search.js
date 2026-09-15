@@ -33,8 +33,8 @@ export default function Search()
         <section id="search">
             <h2>Search</h2>
             <input type="search" placeholder='what movie you want?...' onChange={(e)=>handleClick(e.target.value)}/>
-            {loading && <p>Loading Movies...</p>}
-            {error && <p>{error}</p>}
+            {loading && <p className='warnning'>Loading Movies...</p>}
+            {error && <p className='warnning'>{error}</p>}
             {result.map((i,index)=>(
                 <section key={index} id="ans">
                     <h3>{i.title}</h3>

@@ -1,0 +1,13 @@
+.conactdetails{
+    text-align: center;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.conactdetails span{
+    background-color:rgb(249, 238, 189);
+    border:solid yellow;
+    border-radius: 10px;
+    color:black;
+    padding: 3px;
+    margin: 5px;
+}

@@ -17,6 +17,9 @@
     border-radius: 10px;
     margin:3px;
     box-shadow: 2px 2px 5px yellow;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
     transition: all 0.3s ease;
 }
 #movie ul button:hover{
